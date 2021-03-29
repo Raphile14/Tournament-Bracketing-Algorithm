@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <%- include('../partials/head'); %>
+        <title>Input</title>
+    </head>
+    <body>
+        <div class="text-center">
+            <br>
+            <h1>Input Bracket Information</h1>
+            <form action="/output" method="POST">
+                <div class="container">
+                    <hr class="my-4">
+
+                    <!-- Team Name Input -->
+                    <h4>Team/Player Names</h4>
+                    <div class="row">                        
+                        <div class="form-floating col-2 text-left">                            
+                            <p> Separate with new line <br> ex: <br> <br> Team1 <br> Team2 </p>                            
+                        </div>
+                        <div class="col-10">
+                            <textarea class="form-control" placeholder="Insert teams/players here" name="inputTeams" id="inputTeams" required></textarea>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+
+                    <!-- Bracket Settings Input -->
+                    <h4>Bracket Settings</h4> <br>
+
+                    <!-- Bracket Type -->
+                    <div class="row">
+                        <div class="col-6"><p>Bracket Type:</p></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group col-6">
+                            <input type="radio" class="btn-check" name="bracketType" value="0" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="btnradio1">Single Eliminations</label>
+                          
+                            <input type="radio" class="btn-check" name="bracketType" value="1" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnradio2">Double Eliminations</label>
+                          
+                            <input type="radio" class="btn-check" name="bracketType" value="2" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnradio3">Round Robin</label>
+                        </div>
+                    </div>
+
+                    <!-- Bracket Seed -->
+                    <div class="row">
+                        <div class="col-6"><p>Bracket Seed:</p></div>
+                        <div class="col-6">
+                            <input type="text" class="form-control" name="inputSeed" id="inputSeed" placeholder="Any Value (Leave empty to prevent randomization)">
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                </div>                
+                <button type="submit" class="btn btn-success">Generate</button>
+            </form>            
+        </div>        
+        <%- include('../partials/scripts'); %>    
+    </body>
+</html>

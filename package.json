@@ -1,0 +1,33 @@
+{
+  "name": "tournament-bracketing-algorithm",
+  "version": "1.0.0",
+  "description": "An algorithm that generates tournament brackets",
+  "main": "./server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raphile14/Tournament-Bracketing-Algorithm.git"
+  },
+  "keywords": [
+    "Tournament",
+    "Bracketing",
+    "Node.js"
+  ],
+  "author": "Raphael Dalangin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raphile14/Tournament-Bracketing-Algorithm/issues"
+  },
+  "homepage": "https://github.com/Raphile14/Tournament-Bracketing-Algorithm#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "seedrandom": "^3.0.5"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
