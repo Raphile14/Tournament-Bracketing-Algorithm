@@ -48,7 +48,7 @@ function randomize(teams) {
         }
         bracket.push(roundPairings);
     }    
-    return bracket;
+    return {type: "Single Eliminations", bracket};
 }
 
 module.exports = randomize;

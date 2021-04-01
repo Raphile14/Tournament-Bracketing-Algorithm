@@ -34,7 +34,7 @@ function randomize(teams) {
         teamIndexes.push(teamIndexes.shift());
         bracket.push(roundPairings);
     }
-    return bracket;
+    return {type: "Round Robin", bracket};
 }
 
 module.exports = randomize;
