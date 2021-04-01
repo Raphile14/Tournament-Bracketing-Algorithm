@@ -12,7 +12,7 @@ router.post('/', (req, res) => {
     // Gathering and Filtering Team Data
     let teams = req.body.inputTeams.split(/\r?\n/);
     let teamsFiltered = teams.filter((el) => { return el; });
-    let response = [];
+    let response = {};
 
     // Randomizing teams array if seed is set
     if (req.body.inputSeed)
@@ -26,8 +26,10 @@ router.post('/', (req, res) => {
     else if (req.body.bracketType == 2) 
         response = round_robin(teams);
 
-    return res.json(response);
-    // return res.render('pages/output.ejs', {bracket});
+    response.name = req.body.inputName;
+    response.game = req.body.inputGame;
+    // return res.json(response);
+    return res.render('pages/output.ejs', response);
 });
 
 module.exports = router;

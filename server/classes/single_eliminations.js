@@ -39,9 +39,9 @@ function randomize(teams) {
             gameCount += 1;
             let white = "Bye", black = "Bye";
             if (bracket[bracket.length - 1][i])
-                white = "Winner of Game " + bracket[bracket.length - 1][i].game;
+                white = "W. Game " + bracket[bracket.length - 1][i].game;
             if (bracket[bracket.length - 1][half + i])
-                black = "Winner of Game " + bracket[bracket.length - 1][half + i].game;
+                black = "W. Game " + bracket[bracket.length - 1][half + i].game;
             roundPairings.push({
                 game: gameCount, white, black
             });

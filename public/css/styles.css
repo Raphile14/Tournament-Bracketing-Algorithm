@@ -1,3 +1,29 @@
 #inputTeams {
     height: 200px;
 }
+
+#games, #root {
+    display: block;
+    /* overflow-x: auto; */
+    white-space: nowrap;
+}
+
+.game-container {
+    display: inline-block;
+    width: 300px;
+}
+
+.inline-container {
+    display: inline-block;    
+    padding-right: 40px;
+    padding-left: 0px;
+}
+
+.item {
+    min-width: 200px;
+}
+
+.add {
+    padding-left: 20px;
+    padding-right: 20px;
+}
