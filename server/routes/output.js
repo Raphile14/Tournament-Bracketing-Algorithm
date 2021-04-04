@@ -20,11 +20,11 @@ router.post('/', (req, res) => {
 
     // Generate Round Robin
     if (req.body.bracketType == 0) 
-        response = single_eliminations(teams);
+        response = single_eliminations(teamsFiltered);
     else if (req.body.bracketType == 1) 
-        response = double_eliminations(teams);
+        response = double_eliminations(teamsFiltered);
     else if (req.body.bracketType == 2) 
-        response = round_robin(teams);
+        response = round_robin(teamsFiltered);
 
     response.name = req.body.inputName;
     response.game = req.body.inputGame;
