@@ -1,5 +1,5 @@
 # Tournament-Bracketing-Algorithm
-A Final Project for CS124: Algorithms And Complexity
+A Final Project for CS124: Algorithms And Complexity.
 
 ## Goals
 ### Primary Goals:
